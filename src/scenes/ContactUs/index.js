@@ -1,15 +1,15 @@
 import React, { Component } from 'react';
-import logo from './logo.svg';
-import './App.css';
+import logo from '../../assets/logo.svg';
+import './ContactUs.css';
 
-class App extends Component {
+class ContactUs extends Component {
   render() {
     return (
       <div className="App">
         <header className="App-header">
           <img src={logo} className="App-logo" alt="logo" />
           <p>
-            Edit <code>src/App.js</code> and save to reload.
+            Edit <code>sr/App.js</code> and save to reload.
           </p>
           <a
             className="App-link"
@@ -17,7 +17,7 @@ class App extends Component {
             target="_blank"
             rel="noopener noreferrer"
           >
-            Learn React
+            Stop Bitching
           </a>
         </header>
       </div>
@@ -25,4 +25,4 @@ class App extends Component {
   }
 }
 
-export default App;
+export default ContactUs;
