@@ -3,6 +3,7 @@ import ReactDOM from 'react-dom';
 import './index.css';
 import Router from './services/Router';
 import * as serviceWorker from './serviceWorker';
+import 'bootstrap/dist/css/bootstrap.css'
 
 ReactDOM.render(<Router />, document.getElementById('root'));
 
