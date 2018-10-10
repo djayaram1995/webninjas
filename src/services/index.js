@@ -6,7 +6,7 @@ import Router from '../services/Routes'
 
 import 'bootstrap/dist/css/bootstrap.css'
 
-export default class RouterContainer extends Component {
+class RouterContainer extends Component {
     constructor() {
         super();
         this.state = {
@@ -14,9 +14,7 @@ export default class RouterContainer extends Component {
             servicesStyle: ''
         }
     }
-    componentDidMount () {
-        
-    }
+    
     pathSet() {
         const pathname = window.location.pathname
         if (pathname === '/') {
@@ -51,12 +49,11 @@ export default class RouterContainer extends Component {
                             <Link to="/contactus" className={`d-inline-block tab ${contactUsStyle}`}>Contact Us</Link>
                         </div>
                     </div>
-                    <Router />
+                    <Router pathName={() => this.pathSet()}/>
                 </div>
             </BrowserRouter>
         );
     }
-    
-                    
 }
 
+export default RouterContainer;

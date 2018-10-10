@@ -1,10 +1,18 @@
 import React, { Component } from 'react';
-import { Route, Switch } from 'react-router-dom'
+import { Route, Switch, withRouter } from 'react-router-dom'
 import App from '../../scenes/HomePage/App';
 import ContactUs from '../../scenes/ContactUs';
 import Services from '../../scenes/Services';
 
-export default class Router extends Component {
+class Router extends Component {
+    componentDidMount() {
+        this.unlisten = this.props.history.listen(() => {
+          this.props.pathName();
+        });
+      }
+      componentWillUnmount() {
+          this.unlisten();
+      }
     render() {
         return (
             <div>
@@ -18,3 +26,4 @@ export default class Router extends Component {
     }
     
 }
+export default withRouter(Router);
