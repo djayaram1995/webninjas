@@ -7,6 +7,7 @@ body {
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }
+
 a:hover {
   text-decoration: none !important;
 }
@@ -20,11 +21,15 @@ a:hover {
 .spanWeb {
   padding-top: 10px;
 }
+
 .tab {
   padding-top: 12.5px;
   padding-bottom: 12.5px;
   margin-right: 20px;
+  font-size: 20px;
 }
+
 .selected {
   color: #0056b3;
+  font-size: 25px;
 }
