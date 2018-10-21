@@ -115,7 +115,7 @@ class Router extends Component {
                             "speed": 3
                         },
                         "repulse": {
-                            "distance": 200,
+                            "distance": 100,
                             "duration": 0.4
                         },
                         "push": {
