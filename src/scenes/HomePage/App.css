@@ -9,7 +9,17 @@
 
 
 
-.changingFont {
-  font-size: 50px;
-  margin-top: 50px;
+.ml4 {
+  position: relative;
+  font-weight: 900;
+  font-size: 2em;
+  font-family: monospace;
+}
+.ml4 .letters {
+  position: absolute;
+  margin: auto;
+  left: 0;
+  top: 0.3em;
+  right: 0;
+  opacity: 0; 
 }
